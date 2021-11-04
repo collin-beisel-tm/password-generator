@@ -128,6 +128,9 @@ function generatePassword() {
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+//Get reference to the #copy element
+var copyBtn = document.querySelector("#copy");
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -137,8 +140,15 @@ function writePassword() {
 
 }
 
+//Copy password from text body
+async function copyPassword() {
+  let text = document.querySelector("#password").value;
+  await navigator.clipboard.writeText(text);
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+copyBtn.addEventListener("click",copyPassword);
 
 
 
