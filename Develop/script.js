@@ -1,4 +1,3 @@
-// Assignment code here
 //Global arrays and variables
 
 const lowerCase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
@@ -16,24 +15,26 @@ var finalPassword = "";
 
 //generate password function
 function generatePassword() {
-  //Reset all input variables to empty so the application can be run as expected multiple times without refreshing the browser to clear variables
-confirmLowerCase = "";
-comfirmUpperCase = "";
-confirmNumbers = "";
-confirmSpecialChar = "";
-passwordLength = "";
-passwordString = [""];
-finalPassword = "";
 
-  //when user clicks generate password, ask them what the length should be 8-128 and validate their input
+  /*Reset all input variables to empty so the application can be run as expected multiple times without
+  refreshing the browser to clear variables*/
+  confirmLowerCase = "";
+  comfirmUpperCase = "";
+  confirmNumbers = "";
+  confirmSpecialChar = "";
+  passwordLength = "";
+  passwordString = [""];
+  finalPassword = "";
+
+  //when user clicks generate password, ask them what the length should be between 8-128 and validate their input
   passwordLength = prompt("Please input the desired length of your password from 8 to 128 characters.");
   //if user selects cancel on window prompt, the application will stop. They can start again by clicking generate password.
   if (passwordLength === null) {
     return;
   }
- 
 
-  //Loop that will run through the confirm length prompt until correct length range is chosen and the user has entered a valid number
+  /*Loop that will run through the confirm length prompt while the password length entered does not meet requirements...
+  pwd must be greater than 7 but less than 129 and must be a number*/
   while (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
     alert("You must choose a length between 8-128. This field only accepts numbers.")
     passwordLength = prompt("Please input the desired length of your password from 8 to 128 characters.");
@@ -43,40 +44,44 @@ finalPassword = "";
     }
   }
 
-  //print the chosen password length to console to check if it worked
-  console.log("Your password will be " + passwordLength + " characters");
+  //let the user know what length they have selected
+  alert("Your password will be " + passwordLength + " characters");
 
     //confirm if user wants to include lower case letters
     confirmLowerCase = confirm("Would you like to include LOWER CASE LETTERS in your password? (Click okay to include or cancel to skip)");
+    //let the user know if they inluded this criteria
     if (confirmLowerCase) {
-      console.log("You have chosen to include LOWER CASE LETTERS.");
+      alert("You have chosen to include LOWER CASE LETTERS.");
     }
     else {
-      console.log("You have chosen not to include LOWER CASE LETTERS.");
+      alert("You have chosen not to include LOWER CASE LETTERS.");
     }
     //confirm if user wants to include upper case letters
     confirmUpperCase = confirm("Would you like to include UPPER CASE LETTERS in your password? (Click okay to include or cancel to skip)");
+    //let the user know if they inluded this criteria
     if (confirmUpperCase) {
-      console.log("You have chosen to include UPPER CASE LETTERS");
+      alert("You have chosen to include UPPER CASE LETTERS");
     }
     else {
-      console.log("You have chosen not to include UPPER CASE LETTERS");
+      alert("You have chosen not to include UPPER CASE LETTERS");
     }
     //confirm if user wants to include numbers
     confirmNumbers = confirm("Would you like to include NUMBERS in your password? (Click okay to include or cancel to skip)");
+    //let the user know if they inluded this criteria
     if (confirmNumbers) {
-      console.log("You have chosen to include NUMBERS");
+      alert("You have chosen to include NUMBERS");
     }
     else {
-      console.log("You have chosen not to include NUMBERS");
+      alert("You have chosen not to include NUMBERS");
     }
     //confirm if user wants to include special Characters
     confirmSpecialChar = confirm("Would you like to include SPECIAL CHARACTERS in your password? (Click okay to include or cancel to skip)");
+    //let the user know if they inluded this criteria
     if (confirmSpecialChar) {
-      console.log("You have chosen to include special SPECIAL CHARACTERS");
+      alert("You have chosen to include special SPECIAL CHARACTERS");
     }
     else {
-      console.log("You have chosen not to include special SPECIAL CHARACTERS");
+      alert("You have chosen not to include special SPECIAL CHARACTERS");
     }
 
   //Loop that will run through configuration options until they choose at least 1 parameter
@@ -85,54 +90,61 @@ finalPassword = "";
     alert("Please select 1 ore more password parameters, it is recommended to include all for security.")
     //confirm if user wants to include lower case letters
     confirmLowerCase = confirm("Would you like to include LOWER CASE LETTERS in your password? (Click okay to include or cancel to skip)");
+    //let the user know if they inluded this criteria
     if (confirmLowerCase) {
-      console.log("You have chosen to include LOWER CASE LETTERS.");
+      alert("You have chosen to include LOWER CASE LETTERS.");
     }
     else {
-      console.log("You have chosen not to include LOWER CASE LETTERS.");
+      alert("You have chosen not to include LOWER CASE LETTERS.");
     }
     //confirm if user wants to include upper case letters
     confirmUpperCase = confirm("Would you like to include UPPER CASE LETTERS in your password? (Click okay to include or cancel to skip)");
+    //let the user know if they inluded this criteria
     if (confirmUpperCase) {
-      console.log("You have chosen to include UPPER CASE LETTERS");
+      alert("You have chosen to include UPPER CASE LETTERS");
     }
     else {
-      console.log("You have chosen not to include UPPER CASE LETTERS");
+      alert("You have chosen not to include UPPER CASE LETTERS");
     }
     //confirm if user wants to include numbers
     confirmNumbers = confirm("Would you like to include NUMBERS in your password? (Click okay to include or cancel to skip)");
+    //let the user know if they inluded this criteria
     if (confirmNumbers) {
-      console.log("You have chosen to include special NUMBERS");
+      alert("You have chosen to include special NUMBERS");
     }
     else {
-      console.log("You have chosen not to include special NUMBERS");
+      alert("You have chosen not to include special NUMBERS");
     }
     //confirm if user wants to include special Characters
     confirmSpecialChar = confirm("Would you like to include SPECIAL CHARACTERS in your password? (Click okay to include or cancel to skip)");
+    //let the user know if they inluded this criteria
     if (confirmSpecialChar) {
-      console.log("You have chosen to include special SPECIAL CHARACTERS");
+      alert("You have chosen to include special SPECIAL CHARACTERS");
     }
     else {
-      console.log("You have chosen not to include special SPECIAL CHARACTERS");
+      alert("You have chosen not to include special SPECIAL CHARACTERS");
     }
   }
   
   // Generate new array based on criteria user selects... add together contents of each char array and and send the total to a new variable passwordString
+  //if user selects lowercase, then concat the associated array to the password string array
   if(confirmLowerCase) {
     passwordString = passwordString.concat(lowerCase);
   }
+  //if user selects uppercase, then concat the associated array to the password string array
   if (confirmUpperCase) {
     passwordString = passwordString.concat(upperCase);
   }
+  //if user selects numbers, then concat the associated array to the password string array
   if (confirmNumbers) {
     passwordString = passwordString.concat(numbers);
   }
+  //if user selects special characters, then concat the associated array to the password string array
   if (confirmSpecialChar) {
     passwordString = passwordString.concat(specialChar);
   }
-  console.log(passwordString);
 
-  //loop to pull a random character from the new concatinated array. Will run loop for the length of the new array
+  //for loop to pull a random character from the new concatinated array. Will run loop for the length of the new array
   for (let i = 0; i < passwordLength; i++) {
     finalPassword = finalPassword + passwordString[Math.floor(Math.random() * passwordString.length)];
   }
