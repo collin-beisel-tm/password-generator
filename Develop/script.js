@@ -10,21 +10,37 @@ var confirmLowerCase;
 var comfirmUpperCase;
 var confirmNumbers;
 var confirmSpecialChar;
-
 var passwordLength;
-var passwordString = [];
+var passwordString = [""];
 var finalPassword = "";
 
 //generate password function
 function generatePassword() {
+  //Reset all input variables to empty so the application can be run as expected multiple times without refreshing the browser to clear variables
+confirmLowerCase = "";
+comfirmUpperCase = "";
+confirmNumbers = "";
+confirmSpecialChar = "";
+passwordLength = "";
+passwordString = [""];
+finalPassword = "";
+
   //when user clicks generate password, ask them what the length should be 8-128 and validate their input
   passwordLength = prompt("Please input the desired length of your password from 8 to 128 characters.");
+  //if user selects cancel on window prompt, the application will stop. They can start again by clicking generate password.
+  if (passwordLength === null) {
+    return;
+  }
  
 
   //Loop that will run through the confirm length prompt until correct length range is chosen and the user has entered a valid number
-  while (passwordLength < 8 || passwordLength > 128 || passwordLength == null || isNaN(passwordLength)) {
+  while (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
     alert("You must choose a length between 8-128. This field only accepts numbers.")
     passwordLength = prompt("Please input the desired length of your password from 8 to 128 characters.");
+    //if user selects cancel on window prompt, the application will stop. They can start again by clicking generate password.
+    if (passwordLength === null) {
+      return;
+    }
   }
 
   //print the chosen password length to console to check if it worked
@@ -49,10 +65,10 @@ function generatePassword() {
     //confirm if user wants to include numbers
     confirmNumbers = confirm("Would you like to include NUMBERS in your password? (Click okay to include or cancel to skip)");
     if (confirmNumbers) {
-      console.log("You have chosen to include special NUMBERS");
+      console.log("You have chosen to include NUMBERS");
     }
     else {
-      console.log("You have chosen not to include special NUMBERS");
+      console.log("You have chosen not to include NUMBERS");
     }
     //confirm if user wants to include special Characters
     confirmSpecialChar = confirm("Would you like to include SPECIAL CHARACTERS in your password? (Click okay to include or cancel to skip)");
