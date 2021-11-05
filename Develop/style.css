@@ -28,7 +28,7 @@ header {
   padding: 20px;
   padding-top: 0px;
   font-size: 24px;
-  background: -webkit-linear-gradient(rgb(247, 116, 116),rgb(105, 4, 4));
+  background: -webkit-linear-gradient(rgb(253, 5, 5),rgb(41, 1, 1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -168,7 +168,7 @@ header {
 }
 
 @media (max-width: 690px) {
-  .btn, .small-btn {
+  .btn, .copy-btn, .copy-btn:hover, .btn:hover {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
@@ -180,7 +180,7 @@ header {
 }
 
 @media (max-width: 500px) {
-  .btn, .small-btn {
+  .btn, .copy-btn, .copy-btn:hover, .btn:hover {
     font-size: 0.8rem;
   }
 }
