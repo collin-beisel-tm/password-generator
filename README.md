@@ -1,7 +1,7 @@
 # Collin Beisel's Password Generator
 
 ## App description
-This application is used to generate a strong password with a length of 8-128 characters using lowercase, uppercase, numbers and special characters.
+- This application is used to generate a strong password with a length of 8-128 characters using lowercase, uppercase, numbers and special characters.
 
 ![Image of the app landing page](https://github.com/collin-beisel-tm/password-generator/blob/main/Develop/Images/pwd-gen-hp.PNG)
 ![Image of the password length prompt](https://github.com/collin-beisel-tm/password-generator/blob/main/Develop/Images/pwd-gen-length.PNG)
@@ -17,11 +17,11 @@ This application is used to generate a strong password with a length of 8-128 ch
 - Git/GitHub
 
 ## Why did I build this project?
-I built this application as part of SMU's Full Stack Web Dev bootcamp. In this scenario our "emloyer" tasked us to create this password generator so that employees would have strong passwords.
+- I built this application as part of SMU's Full Stack Web Dev bootcamp. In this scenario our "emloyer" tasked us to create this password generator so that employees would have strong passwords.
 
 
 ## What did I learn?
-Building this application tought me how to research the many ways something can be accomplished in JS and pick the best one for my needs. I learned how to properly use arrays with concatination, how to use functions, and nested functions. I learned how to use while loops, and for loops to iterate requests or prompts. I learned how to use event listeners and query selectors to target HTML elements and user interaction.
+- Building this application tought me how to research the many ways something can be accomplished in JS and pick the best one for my needs. I learned how to properly use arrays with concatination, how to use functions, and nested functions. I learned how to use while loops, and for loops to iterate requests or prompts. I learned how to use event listeners and query selectors to target HTML elements and user interaction.
 
 ## Features
 - Header and greeting text
@@ -64,6 +64,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 ## Acceptance Criteria
 GIVEN I need a new, secure password
 ### Prompt
