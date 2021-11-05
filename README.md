@@ -3,39 +3,44 @@
 ## App description
 This application is used to generate a strong password with a length of 8-128 characters using lowercase, uppercase, numbers and special characters.
 
-![Image of the app landing page](https://github.com/collin-beisel-tm/password-generator/blob/main/Develop/Images/pwd-gen-hp.PNG)
-![Image of the My Work section](https://github.com/collin-beisel-tm/fullstack-portfolio/blob/main/assets/Images/readme-screenshot2.PNG
-)
+![Image of the app landing page](https://github.com/collin-beisel-tm/password-generator/tree/main/Develop/Images/pwd-gen-hp.PNG)
+![Image of the password length prompt](https://github.com/collin-beisel-tm/password-generator/tree/main/Develop/Images/pwd-gen-length.PNG)
 
-![Image of the footer section](https://github.com/collin-beisel-tm/fullstack-portfolio/blob/main/assets/Images/readme-screenshot3.PNG
-)
+![Example image of password criteria prompt](https://github.com/collin-beisel-tm/password-generator/tree/main/Develop/Images/pwd-gen-char.PNG)
+
+![Example image of completed password generation](https://github.com/collin-beisel-tm/password-generator/tree/main/Develop/Images/pwd-gen-complete.PNG)
 
 ## Technologies used
 - HTML
-- CSS (flexbox)
+- CSS
+- JavaScript
 - Git/GitHub
 
 ## Why did I build this project?
-I built this application so I could have a place to display my recent development work to potential employers/clients.
+I built this application as part of SMU's Full Stack Web Dev bootcamp. In this scenario our "emloyer" tasked us to create this password generator so that employees would have strong passwords.
 
 
 ## What did I learn?
-I learned how to use flexbox to style multiple flex containers with differing card sizes. I learned how to make my components responsive to browser size. These two things proved very challenging when dealing with many nested child elements in each flex container.
+Building this application tought me how to research the many ways something can be accomplished in JS and pick the best one for my needs. I learned how to properly use arrays with concatination, how to use functions, and nested functions. I learned how to use while loops, and for loops to iterate requests or prompts. I learned how to use event listeners and query selectors to target HTML elements and user interaction.
 
 ## Features
-- Global nav with links to each site section
-- Sections to tell clients/employers about me, my work, and how to reach me
-- a grid of flexbox cards for my recent dev projects that are clickable and bring users to my published git pages
+- Header and greeting text
+- text body where your password will be generated
+- "generate password" button that will kick off the application to ask you a series of questions to build your password off 
+- "copy to clipboard" button will copy the newly generated password to your clipboard so you can easily paste it in another application/password manager
+- You can successfully run through this application as many times as you want without refreshing the page to generate multiple unique passwords.
 
 ## How to install this application
-- No installation is required to use this web application. Simply navigate to the url in your favorite web browser (not compatible with Internet Explorer)
+- No installation is required to use this web application. Simply navigate to the url in your favorite web browser (not compatible with Internet Explorer).
 
 ## How to use this application
-- Navigate to https://collin-beisel-tm.github.io/fullstack-portfolio/#get-to-know-me
-- scroll down to learn about me or click the global nav button to reach your desired section
-- Project cards in the 'My Work' section are clickable and will take you to the deployed application on GitHub pages. If the project is not yet complete the link will take you to my GitHub profile
-- Click the email link in the 'Reach Out' section or fill out the form to get in touch with me
-- Click the respective footer link to view my LinkedIn, Github, and Facebook profiles
+- Navigate to https://collin-beisel-tm.github.io/password-generator
+- Click the "Generate Password" button to begin
+- Follow the prompt to select password length
+- Confirm your selections for the inclusion of lower case, upper case, numbers, and special characters
+- Your new password will generate in the text box
+- Click the "Copy to Clipboard" button to copy your new password so you can paste it into another application or password manager
+
 
 ## license
 MIT License

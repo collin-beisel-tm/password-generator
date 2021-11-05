@@ -23,6 +23,7 @@ body {
   padding-right: 20px;
 }
 
+/*Updated header style to add gradient*/
 header {
   text-align: center;
   padding: 20px;
@@ -94,6 +95,7 @@ header {
   cursor: pointer;
 }
 
+/*added inverted button hover state*/
 .btn:hover{
   border: solid thin hsl(360, 91%, 36%);
   background-color:  hsl(0, 0%, 100%);
@@ -110,6 +112,7 @@ header {
   cursor: pointer;
 }
 
+/*added styles for copy button*/
 .copy-btn {
   border: none;
   background-color: rgb(7, 83, 146);
@@ -125,7 +128,7 @@ header {
   text-align: center;
   cursor: pointer;
 }
-
+/*added inverted button hover state*/
 .copy-btn:hover{
   border: solid thin rgb(7, 83, 146);
   background-color:  hsl(0, 0%, 100%);
@@ -166,7 +169,7 @@ header {
   resize: none;
   overflow: hidden;
 }
-
+/*added new copy button and hover states to media queries*/
 @media (max-width: 690px) {
   .btn, .copy-btn, .copy-btn:hover, .btn:hover {
     font-size: 1rem;
