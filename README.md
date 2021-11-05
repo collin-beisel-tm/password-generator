@@ -34,7 +34,7 @@ Building this application tought me how to research the many ways something can 
 - No installation is required to use this web application. Simply navigate to the url in your favorite web browser (not compatible with Internet Explorer).
 
 ## How to use this application
-- Navigate to https://collin-beisel-tm.github.io/password-generator
+- Navigate to https://collin-beisel-tm.github.io/password-generator/
 - Click the "Generate Password" button to begin
 - Follow the prompt to select password length
 - Confirm your selections for the inclusion of lower case, upper case, numbers, and special characters
