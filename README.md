@@ -3,12 +3,12 @@
 ## App description
 This application is used to generate a strong password with a length of 8-128 characters using lowercase, uppercase, numbers and special characters.
 
-![Image of the app landing page](https://github.com/collin-beisel-tm/password-generator/tree/main/Develop/Images/pwd-gen-hp.PNG)
-![Image of the password length prompt](https://github.com/collin-beisel-tm/password-generator/tree/main/Develop/Images/pwd-gen-length.PNG)
+![Image of the app landing page](https://github.com/collin-beisel-tm/password-generator/blob/main/Develop/Images/pwd-gen-hp.PNG)
+![Image of the password length prompt](https://github.com/collin-beisel-tm/password-generator/blob/main/Develop/Images/pwd-gen-length.PNG)
 
-![Example image of password criteria prompt](https://github.com/collin-beisel-tm/password-generator/tree/main/Develop/Images/pwd-gen-char.PNG)
+![Example image of password criteria prompt](https://github.com/collin-beisel-tm/password-generator/blob/main/Develop/Images/pwd-gen-char.PNG)
 
-![Example image of completed password generation](https://github.com/collin-beisel-tm/password-generator/tree/main/Develop/Images/pwd-gen-complete.PNG)
+![Example image of completed password generation](https://github.com/collin-beisel-tm/password-generator/blob/main/Develop/Images/pwd-gen-complete.PNG)
 
 ## Technologies used
 - HTML
