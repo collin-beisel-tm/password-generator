@@ -27,7 +27,10 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: black;
+  font-size: 24px;
+  background: -webkit-linear-gradient(rgb(247, 116, 116),rgb(105, 4, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card {
@@ -91,7 +94,23 @@ header {
   cursor: pointer;
 }
 
-.small-btn {
+.btn:hover{
+  border: solid thin hsl(360, 91%, 36%);
+  background-color:  hsl(0, 0%, 100%);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color:  hsl(360, 91%, 36%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.copy-btn {
   border: none;
   background-color: rgb(7, 83, 146);
   border-radius: 25px;
@@ -107,9 +126,20 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
+.copy-btn:hover{
+  border: solid thin rgb(7, 83, 146);
+  background-color:  hsl(0, 0%, 100%);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color:  rgb(7, 83, 146);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .float-right {
