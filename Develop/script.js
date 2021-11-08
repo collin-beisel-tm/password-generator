@@ -51,37 +51,37 @@ function generatePassword() {
     confirmLowerCase = confirm("Would you like to include LOWER CASE LETTERS in your password? (Click okay to include or cancel to skip)");
     //let the user know if they inluded this criteria
     if (confirmLowerCase) {
-      alert("You have chosen to include LOWER CASE LETTERS.");
+      console.log("You have chosen to include LOWER CASE LETTERS.");
     }
     else {
-      alert("You have chosen not to include LOWER CASE LETTERS.");
+      console.log("You have chosen not to include LOWER CASE LETTERS.");
     }
     //confirm if user wants to include upper case letters
     confirmUpperCase = confirm("Would you like to include UPPER CASE LETTERS in your password? (Click okay to include or cancel to skip)");
     //let the user know if they inluded this criteria
     if (confirmUpperCase) {
-      alert("You have chosen to include UPPER CASE LETTERS");
+      console.log("You have chosen to include UPPER CASE LETTERS");
     }
     else {
-      alert("You have chosen not to include UPPER CASE LETTERS");
+      console.log("You have chosen not to include UPPER CASE LETTERS");
     }
     //confirm if user wants to include numbers
     confirmNumbers = confirm("Would you like to include NUMBERS in your password? (Click okay to include or cancel to skip)");
     //let the user know if they inluded this criteria
     if (confirmNumbers) {
-      alert("You have chosen to include NUMBERS");
+      console.log("You have chosen to include NUMBERS");
     }
     else {
-      alert("You have chosen not to include NUMBERS");
+      console.log("You have chosen not to include NUMBERS");
     }
     //confirm if user wants to include special Characters
     confirmSpecialChar = confirm("Would you like to include SPECIAL CHARACTERS in your password? (Click okay to include or cancel to skip)");
     //let the user know if they inluded this criteria
     if (confirmSpecialChar) {
-      alert("You have chosen to include special SPECIAL CHARACTERS");
+      console.log("You have chosen to include special SPECIAL CHARACTERS");
     }
     else {
-      alert("You have chosen not to include special SPECIAL CHARACTERS");
+      console.log("You have chosen not to include special SPECIAL CHARACTERS");
     }
 
   //Loop that will run through configuration options until they choose at least 1 parameter
@@ -92,37 +92,37 @@ function generatePassword() {
     confirmLowerCase = confirm("Would you like to include LOWER CASE LETTERS in your password? (Click okay to include or cancel to skip)");
     //let the user know if they inluded this criteria
     if (confirmLowerCase) {
-      alert("You have chosen to include LOWER CASE LETTERS.");
+      console.log("You have chosen to include LOWER CASE LETTERS.");
     }
     else {
-      alert("You have chosen not to include LOWER CASE LETTERS.");
+      console.log("You have chosen not to include LOWER CASE LETTERS.");
     }
     //confirm if user wants to include upper case letters
     confirmUpperCase = confirm("Would you like to include UPPER CASE LETTERS in your password? (Click okay to include or cancel to skip)");
     //let the user know if they inluded this criteria
     if (confirmUpperCase) {
-      alert("You have chosen to include UPPER CASE LETTERS");
+      console.log("You have chosen to include UPPER CASE LETTERS");
     }
     else {
-      alert("You have chosen not to include UPPER CASE LETTERS");
+      console.log("You have chosen not to include UPPER CASE LETTERS");
     }
     //confirm if user wants to include numbers
     confirmNumbers = confirm("Would you like to include NUMBERS in your password? (Click okay to include or cancel to skip)");
     //let the user know if they inluded this criteria
     if (confirmNumbers) {
-      alert("You have chosen to include special NUMBERS");
+      console.log("You have chosen to include special NUMBERS");
     }
     else {
-      alert("You have chosen not to include special NUMBERS");
+      console.log("You have chosen not to include special NUMBERS");
     }
     //confirm if user wants to include special Characters
     confirmSpecialChar = confirm("Would you like to include SPECIAL CHARACTERS in your password? (Click okay to include or cancel to skip)");
     //let the user know if they inluded this criteria
     if (confirmSpecialChar) {
-      alert("You have chosen to include special SPECIAL CHARACTERS");
+      console.log("You have chosen to include special SPECIAL CHARACTERS");
     }
     else {
-      alert("You have chosen not to include special SPECIAL CHARACTERS");
+      console.log("You have chosen not to include special SPECIAL CHARACTERS");
     }
   }
   
